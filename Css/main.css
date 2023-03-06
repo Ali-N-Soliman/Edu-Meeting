@@ -162,6 +162,7 @@ ul {
     width: 150px;
     border-radius: 10px;
     display: none;
+    z-index: 1;
 }
 
 .header .container .list::before {
@@ -244,6 +245,8 @@ ul {
     .landing .container .infor {
         top: 25%;
         width: 75%;
+        margin: 20px;
+
     }
 }
 
@@ -252,9 +255,21 @@ ul {
     font-size: 14px;
 }
 
+@media (max-width:767px) {
+    .landing .container .infor h6 {
+        display: none;
+    }
+}
+
 .landing .container .infor h2 {
     color: var(--main-color);
     padding-bottom: 10px;
+}
+
+@media (max-width:767px) {
+    .landing .container .infor h2 {
+        font-size: 20px;
+    }
 }
 
 .landing .container .infor p {
@@ -262,6 +277,12 @@ ul {
     padding-bottom: 10px;
     line-height: 1.5;
     letter-spacing: 0.9px;
+}
+
+@media (max-width:767px) {
+    .landing .container .infor p {
+        line-height: 1;
+    }
 }
 
 .landing .container .infor a {
@@ -342,6 +363,12 @@ ul {
     text-align: center;
     position: relative;
     top: -150px;
+}
+
+@media (max-width:767px) {
+    .sliding .container .box {
+        top: 0
+    }
 }
 
 .sliding .container .box i {
